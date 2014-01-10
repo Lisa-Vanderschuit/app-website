@@ -3,9 +3,37 @@
 <head>
   <meta charset=utf-8>
   <title>App Website</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/general.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+	<script src="js/modernizr.js"></script>
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
- <h1>App Website</h1>
+	<header class="grid">
+		<nav class="unit">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo.svg">
+					<h1>VOTE</h1>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="wrapper grid">
+		<div class="unit unit-s-1 unit-m-1-3 unit-l-1-4">
+			<img class="video" src="http://placehold.it/1000x1000">
+		</div>
+	</div>
+
+	<footer>
+		<p>© Lisa Villeneuve 2014</p>
+	</footer>
+
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
