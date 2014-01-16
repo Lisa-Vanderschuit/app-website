@@ -5,13 +5,14 @@
   *letter-spacing: normal;
   *word-spacing: -0.43em;
   text-rendering: optimizespeed;
+  overflow: hidden;
 }
 .opera-only :-o-prefocus,
 .grid {
   word-spacing: -0.43em;
 }
-.unit,
-.unit-2 {
+
+.unit {
   display: inline-block;
   *display: inline;
   visibility: visible;
@@ -22,8 +23,22 @@
   word-spacing: normal;
 }
 
+.flex-img {
+  display: block;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 .unit-spacer {
   padding: 1em;
+}
+
+.unit-spacer-s {
+  padding: .5em;
 }
 
 /**
@@ -111,6 +126,10 @@
   visibility: visible;
 }
 @media only screen and (min-width: 38em) {
+  .unit-spacer-s {
+    padding: 1em;
+  }
+
   .unit-m-hidden {
     display: none;
     visibility: hidden;
@@ -190,6 +209,11 @@
   }
 }
 @media only screen and (min-width: 60em) {
+
+  .unit-spacer-s {
+    padding: 2em;
+  }
+
   .unit-l-hidden {
     display: none;
     visibility: hidden;
