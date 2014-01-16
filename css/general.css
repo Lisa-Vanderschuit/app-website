@@ -4,15 +4,24 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
-	background-color: #ccc;
+	margin: 0;
+	padding: 0;
 	font: normal 100%/1.4 Myriad Pro,sans-serif;
+	background-image: url('http://upload.wikimedia.org/wikipedia/commons/c/c5/Roasted_coffee_beans.jpg');
+	background-color: #ccc;
 }
 
 body {
-	margin: 0 auto;
-	max-width: 700px;
+	margin: 0;
 	padding: 0;
+	max-width: 700px;
 }
 
 @media only screen and (min-width: 240px) {
@@ -23,11 +32,12 @@ body {
 }
 
 header {
-	background-color: #FA3D38;
+	background-color: #FFF;
 	display: block;
 	margin: 0;
 	padding: 0;
 	float: none;
+	box-shadow: 0px 0px 10px #888888;
 	text-align: center;
 }
 
@@ -38,77 +48,143 @@ nav {
 }
 
 nav h1 {
-	min-width: 100%;
-	min-height: 100%;
-	display: inline-block;
-	margin: 0;
 	font-size: 1.75em;
-	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: .75em;
 }
 
 nav a {
-	padding: .5em 0;
 	display: block;
 	min-width: 100%;
 	min-height: 100%;
+	border-bottom: 5px solid #FFF;
 }
 
 nav a:link,
 nav a:visited {
 	text-decoration: none;
 	font-weight: bold;
-	color: #FFF;
+	color: #50972B;
 }
 
 nav a:hover,
 nav a:focus {
-	background-color: #CA3F38;
+	border-bottom: 5px solid #50972B;
 }
 
 nav a:active {
-	background-color: #333;
 }
 
 nav .selected {
-	background-color: #CA3F38;
 }
 
 .logo img {
-	padding: 1em;
-	width: 25%;
+	display: block;
+	width: 10em;
+	padding-top: .25em;
+}
+
+blockquote {
+}
+
+mark {
+	background-color: #CAFF00;
+}
+
+button {
+	font-size: 2rem;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: 2px solid #50972B;
+	background-color: #50972B;
+	color: #fff;
+	cursor: pointer;
+}
+
+section {
+	display: block;
+	width: 100%;
+}
+
+.masthead {
+	background-color:rgba(255,255,255,0.85);
+}
+
+.screenshots {
+	padding: .5em;
+	text-align: center;
+	color: #FFF;
+}
+
+.features {
+	padding: .5em 3em;
+	text-align: center;
+	color: #FFF;
+	background-color: #50972B;
 }
 
 .video,
 .video img {
-	display: inline-block;
-	margin: 1em;
-	border: 1em solid #FFF;
-}
-
-.masthead {
-
+	display: block;
+	width: 100%;
+	border: .5em solid #50972B;
+	box-shadow: 0px 0px 5px #888888;
 }
 
 footer {
-	background-color: #FA3D38;
+	display: block;
+	background-color: #FFF;
+	color: #50972B;
+	box-shadow: 0px 0px 10px #888888;
 	margin: 0;
-	padding: 0;
+	padding: .5em 1em;
 	float: none;
 	text-align: center;
 }
 
-@media only screen and (max-width: 38em) {
+blockquote p {
+	margin: 0;
+	text-align: center;
+}
 
+.copyright {
+	text-align: left;
+	border-top: 2px solid #50972B;
+	border-bottom: 2px solid #50972B;
 }
 
 @media only screen and (min-width: 38em) {
+
+	header {
+		text-align: left;
+	}
+
+	.masthead,
+	.screenshots {
+		padding: 2em;
+	}
+
+	.features {
+		padding: 2em 5em;
+	}
 
 }
 
 @media only screen and (min-width: 60em) {
 
+
 	html {
 		font: normal 110%/1.4;
+	}
+
+	.features,
+	.screenshots {
+		padding: 3em 8em;
+	}
+
+	.masthead {
+		padding: 2em 8em;
 	}
 
 }
