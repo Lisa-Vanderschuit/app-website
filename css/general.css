@@ -58,7 +58,6 @@ nav a {
 	display: block;
 	min-width: 100%;
 	min-height: 100%;
-	border-bottom: 5px solid #FFF;
 }
 
 nav a:link,
@@ -70,7 +69,6 @@ nav a:visited {
 
 nav a:hover,
 nav a:focus {
-	border-bottom: 5px solid #50972B;
 }
 
 nav a:active {
@@ -79,10 +77,17 @@ nav a:active {
 nav .selected {
 }
 
+nav a {
+	text-transform: uppercase;
+}
+
 .logo img {
 	display: block;
 	width: 10em;
-	padding-top: .25em;
+}
+
+.right-m {
+	text-align: right;
 }
 
 blockquote {
@@ -168,6 +173,10 @@ blockquote p {
 		text-align: left;
 	}
 
+	.right-m {
+		text-align: right;
+	}
+
 	.masthead,
 	.screenshots {
 		padding: 2em;
@@ -184,6 +193,11 @@ blockquote p {
 
 	html {
 		font: normal 110%/1.4;
+	}
+
+	.right-m {
+		text-align: right;
+		float: right;
 	}
 
 	.features,
