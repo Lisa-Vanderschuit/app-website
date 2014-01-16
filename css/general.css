@@ -94,8 +94,9 @@ mark {
 
 button {
 	font-size: 2rem;
+	font-weight: bold;
 	padding: 0.5em;
-	border-radius: 5px;
+	border-radius: 3px;
 	border: 2px solid #50972B;
 	background-color: #50972B;
 	color: #fff;
@@ -109,6 +110,7 @@ section {
 
 .masthead {
 	background-color:rgba(255,255,255,0.85);
+	box-shadow: 0px 2px 2px #333;
 }
 
 .screenshots {
@@ -117,18 +119,24 @@ section {
 	color: #FFF;
 }
 
+.screenshots img {
+	border: 1em solid #50972B;
+	box-shadow: 0px 0px 10px #000;
+}
+
 .features {
 	padding: .5em 3em;
 	text-align: center;
 	color: #FFF;
 	background-color: #50972B;
+	box-shadow: 0px 0px 10px #000;
 }
 
 .video,
 .video img {
 	display: block;
 	width: 100%;
-	border: .5em solid #50972B;
+	border: 1em solid #50972B;
 	box-shadow: 0px 0px 5px #888888;
 }
 
