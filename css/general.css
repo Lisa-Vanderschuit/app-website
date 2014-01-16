@@ -58,6 +58,8 @@ nav a {
 	display: block;
 	min-width: 100%;
 	min-height: 100%;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 nav a:link,
@@ -77,9 +79,6 @@ nav a:active {
 nav .selected {
 }
 
-nav a {
-	text-transform: uppercase;
-}
 
 .logo img {
 	display: block;
@@ -88,6 +87,11 @@ nav a {
 
 .right-m {
 	text-align: right;
+}
+
+.right-m a:hover,
+.right-m a:focus {
+	border-bottom: 3px solid #50972B;
 }
 
 blockquote {
@@ -175,6 +179,7 @@ blockquote p {
 
 	.right-m {
 		text-align: right;
+		float: right;
 	}
 
 	.masthead,
