@@ -5,6 +5,7 @@
   <title>App Website</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/general.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
 	<script src="js/modernizr.js"></script>
 	<meta name="handheldfriendly" content="true">
@@ -27,7 +28,7 @@
 		</nav>
 		<nav class="unit right-m">
 			<div class="unit-spacer">
-				<a href="#screenshots">Screenshots</a>
+				<a href="#testimonials">Testimonials</a>
 			</div>
 		</nav>
 		<nav class="unit right-m">
@@ -37,7 +38,7 @@
 		</nav>
 		<nav class="unit right-m">
 			<div class="unit-spacer">
-				<a href="#testimonials">Testimonials</a>
+				<a href="#screenshots">Screenshots</a>
 			</div>
 		</nav>
 
@@ -59,11 +60,23 @@
 			</div>
 		</section>
 
-		<section class="grid screenshots" id="screenshots">
-			<div class="unit unit-s-1 unit-m-1 unit-l-1">
-				<div class="unit-spacer">
-					<img src="http://placehold.it/1000x500" alt="video">
-					<p>◉ ◎ ◎ ◎ ◎</p>
+		<section class="screenshots" id="screenshots">
+			<div class="unit-spacer">
+				<h2>Screenshots</h2>
+			</div>
+			<div class="unit-spacer">
+				<div class="carousel">
+					<div class="carousel-items">
+						<img data-state="current" src="img/visual-design-0.jpg" alt="">
+						<img src="img/visual-design-1.jpg" alt="">
+						<img src="img/visual-design-2.jpg" alt="">
+						<img src="img/visual-design-3.jpg" alt="">
+						<img src="img/visual-design-4.jpg" alt="">
+					</div>
+					<div class="carousel-buttons">
+						<button class="prev">〈</button>
+						<button class="next">〉</button>
+					<div>
 				</div>
 			</div>
 		</section>
@@ -104,25 +117,36 @@
 					<img src="http://placehold.it/1000x1000" alt="video">
 				</div>
 			</div>
-
 		</section>
+
+		<div class="grid testimonials" id="testimonials">
+			<blockquote class="unit unit-s-1">
+				<div class="unit-spacer">
+					<h3>Testimonials</h3>
+				</div>
+			</blockquote>
+			<blockquote class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
+				<div class="unit-spacer">
+					<q>This app made my Starbucks' coffee experience so much better!  I don't know how I lived before I got it!</q>
+					<p><strong>— Janet Doe</strong></p>
+				</div>
+			</blockquote>
+			<blockquote class="unit unit-s-1 unit-m-1-2 unit-l-1-2">
+				<div class="unit-spacer">
+					<q>This app makes getting my morning coffee effortless!</q>
+					<p><strong>— John Doe</strong></p>
+				</div>
+			</blockquote>
+		</div>
+
 	</div>
 
 	<footer>
-		<blockquote id="testimonials">
-			<h3>Testimonials</h3>
-			<q>This app made my Starbucks' coffee experience so much better!  I don't know how I lived before I got it!</q>
-			<p>— Janet Doe</p>
-		</blockquote>
-		<blockquote>
-			<q>This app makes getting my morning coffee effortless!</q>
-			<p>— John Doe</p>
-		</blockquote>
 		<div class="copyright">
 			<nav class="unit"><p>© Lisa Villeneuve 2014</nav>
 			<nav class="unit right-m">
 				<div class="unit-spacer">
-					<a href="#screenshots">Screenshots</a>
+					<a href="#testimonials">Testimonials</a>
 				</div>
 			</nav>
 			<nav class="unit right-m">
@@ -132,7 +156,7 @@
 			</nav>
 			<nav class="unit right-m">
 				<div class="unit-spacer">
-					<a href="#testimonials">Testimonials</a>
+					<a href="#screenshots">Screenshots</a>
 				</div>
 			</nav>
 		</div>
@@ -140,6 +164,6 @@
 
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/carousel.js"></script>
+  <script src="js/slide.js"></script>
 </body>
 </html>
