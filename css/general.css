@@ -33,12 +33,13 @@ body {
 
 header {
 	background-color: #FFF;
-	display: block;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	float: none;
-	box-shadow: 0px 2px 2px #333;
+	box-shadow: 0px 2px 2px #999;
 	text-align: center;
+	width: 100%;
 }
 
 nav {
@@ -60,6 +61,7 @@ nav a {
 	min-height: 100%;
 	font-weight: normal;
 	text-transform: uppercase;
+	border-bottom: 3px solid #FFF;
 }
 
 nav a:link,
@@ -95,14 +97,17 @@ nav .selected {
 }
 
 blockquote {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
 }
 
 mark {
 	background-color: #CAFF00;
 }
 
-button {
-	font-size: 2rem;
+.masthead button {
+	font-size: 1.75em;
 	font-weight: bold;
 	padding: 0.5em;
 	border-radius: 3px;
@@ -123,14 +128,13 @@ section {
 }
 
 .screenshots {
+	background-color: #000;
 	padding: .5em;
 	text-align: center;
 	color: #FFF;
 }
 
 .screenshots img {
-	border: 1em solid #50972B;
-	box-shadow: 0px 0px 10px #000;
 }
 
 .features {
@@ -139,6 +143,11 @@ section {
 	color: #FFF;
 	background-color: #50972B;
 	box-shadow: 0px 0px 10px #000;
+}
+
+.testimonials {
+	padding: 1em;
+	background-color: #FFF;
 }
 
 .video,
@@ -150,13 +159,12 @@ section {
 }
 
 footer {
-	display: block;
+	display: inline-block;
+	width: 100%;
 	background-color: #FFF;
 	color: #50972B;
-	box-shadow: 0px 0px 10px #888888;
 	margin: 0;
 	padding: .5em 1em;
-	float: none;
 	text-align: center;
 }
 
@@ -183,8 +191,12 @@ blockquote p {
 	}
 
 	.masthead,
-	.screenshots {
+	.testimonials {
 		padding: 2em;
+	}
+
+	.screenshots {
+		padding: 2em 8em;
 	}
 
 	.features {
@@ -192,6 +204,7 @@ blockquote p {
 	}
 
 }
+
 
 @media only screen and (min-width: 60em) {
 
@@ -206,12 +219,24 @@ blockquote p {
 	}
 
 	.features,
-	.screenshots {
+	.testimonials {
 		padding: 3em 8em;
+	}
+
+	.screenshots {
+		padding: 3em 15em;
 	}
 
 	.masthead {
 		padding: 2em 8em;
+	}
+
+}
+
+@media only screen and (min-width: 85em) {
+
+	.screenshots {
+		padding: 3em 25em;
 	}
 
 }
