@@ -52,8 +52,8 @@
 	text-align: right;
 }
 
-.prev:active,
-.next:active {
+.prev:focus,
+.next:focus {
 	outline: none;
 }
 
