@@ -5,11 +5,11 @@ dialog {
 }
 
 dialog::backdrop {
-	background-color: rgba(255,51,153,0.75);
+	background-color: rgba(80,151,43,0.75);
 }
 
 dialog + .backdrop {
-	background-color: rgba(255,51,153,0.75);
+	background-color: rgba(80,151,43,0.75);
 }
 
 #btn-close {
