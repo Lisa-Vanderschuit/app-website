@@ -1,7 +1,7 @@
 dialog {
 	border: 2px solid #000;
 	border-radius: 8px;
-	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);	display: inline-block;
 }
 
 dialog::backdrop {

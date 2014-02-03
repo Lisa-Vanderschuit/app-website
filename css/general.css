@@ -4,24 +4,24 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 html {
 	margin: 0;
 	padding: 0;
 	font: normal 100%/1.4 Myriad Pro,sans-serif;
 	background-image: url('http://upload.wikimedia.org/wikipedia/commons/c/c5/Roasted_coffee_beans.jpg');
 	background-color: #ccc;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	max-width: 700px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 240px) {
@@ -124,6 +124,9 @@ mark {
 section {
 	display: block;
 	width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .masthead {
@@ -174,6 +177,9 @@ footer {
 	padding: .5em 1em;
 	text-align: center;
 	box-shadow: 0px 0px 2px #333;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 blockquote p {
