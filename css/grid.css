@@ -130,6 +130,11 @@ img {
     padding: 1em;
   }
 
+	.unit-spacer-2 {
+	  padding: 1em;
+	  padding-right: 5em;
+	}
+
   .unit-m-hidden {
     display: none;
     visibility: hidden;
@@ -209,6 +214,11 @@ img {
   }
 }
 @media only screen and (min-width: 60em) {
+
+	.unit-spacer-2 {
+		  padding: 1em;
+		}
+
 
   .unit-spacer-s {
     padding: 2em;

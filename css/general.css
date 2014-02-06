@@ -31,6 +31,18 @@ body {
 	}
 }
 
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: #FFF;
+	-webkit-box-shadow:0 0 3px gray inset;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #50972B;
+	border-radius:10px;
+	border: 1px solid green;
+}
+
 header {
 	background-color: #FFF;
 	display: inline-block;
@@ -114,11 +126,16 @@ mark {
 	font-size: 1.75em;
 	font-weight: bold;
 	padding: 0.5em;
-	border-radius: 3px;
 	border: 2px solid #50972B;
 	background-color: #50972B;
 	color: #fff;
 	cursor: pointer;
+}
+
+.masthead button:hover,
+.masthead button:focus {
+	background-color: #3f7722;
+	color: #000;
 }
 
 section {
@@ -129,26 +146,16 @@ section {
   box-sizing: border-box;
 }
 
-.masthead {
-}
-
-.video,
-.video img {
-	border: 1em solid #50972B;
-	box-shadow: 0px 0px 2px #333;
-}
-
 .desc {
 	background-color:rgba(255,255,255,0.85);
 	box-shadow: 0px 0px 2px #333;
 }
 
 .screenshots {
-	background-color: rgba(153,51,0,1);
+	background-color: rgba(255,255,255,0.85);
 	padding: .5em;
 	text-align: center;
-	color: #FFF;
-	box-shadow: 0px 0px 2px #333;
+	color: #000;
 }
 
 .screenshots img {
@@ -238,7 +245,7 @@ blockquote p {
 	}
 
 	.screenshots {
-		padding: 3em 15em;
+		padding: 3em 20em;
 	}
 
 	.masthead {
@@ -250,7 +257,7 @@ blockquote p {
 @media only screen and (min-width: 85em) {
 
 	.screenshots {
-		padding: 3em 25em;
+		padding: 3em 30em;
 	}
 
 }
