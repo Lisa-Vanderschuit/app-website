@@ -4,7 +4,7 @@ var $placeholder = $('#video-placeholder');
 dialogPolyfill.registerDialog($dialog.get(0));
 
 $('#btn-open').on('click', function () {
-	$placeholder.html('<iframe src="http://player.vimeo.com/video/81423932?color=c9ff23&amp;autoplay=1" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+	$placeholder.html('<iframe class="embed-item" src="http://player.vimeo.com/video/81423932?color=c9ff23&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 /*
 	.get() returns the native Javascript element for us to access
 	When using jQuery we don't have access to the original HTML
