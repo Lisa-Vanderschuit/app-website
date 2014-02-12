@@ -2,14 +2,13 @@
 	position: relative;
 }
 
-.embed--4by3 {
-	padding-top: 75%;
+.embed--16by9 {
+	padding-top: 56.25%;
 }
 
 .embed__item {
 	height: 100%;
 	width: 100%;
-	left: 0;
 	top: 0;
 	position: absolute;
 }

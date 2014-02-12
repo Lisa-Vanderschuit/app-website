@@ -136,6 +136,7 @@ mark {
 .masthead button:focus {
 	background-color: #3f7722;
 	color: #000;
+	border: 2px solid #3f7722;
 }
 
 section {

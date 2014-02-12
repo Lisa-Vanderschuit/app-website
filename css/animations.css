@@ -19,6 +19,7 @@
 .hue {
 	-webkit-animation: hue 2s linear infinite;
 	-webkit-transition: background-color 2s;
+	-webkit-transition: border 2s;
 }
 
 
@@ -28,6 +29,7 @@
 	}
 
 	50% {
+		border: 2px solid #2a4f17;
 		background-color: #2a4f17;
 	}
 
