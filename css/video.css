@@ -18,6 +18,7 @@ dialog + .backdrop {
 	line-height: 24px;
 	color: #fff;
 	background-color: #50972B;
+	border: none;
 	padding: 0;
 	font-weight: bold;
 	cursor: pointer;
@@ -25,4 +26,8 @@ dialog + .backdrop {
 	top: -24px;
 	right: -24px;
 	outline: none;
+}
+
+#btn-close:hover {
+	background-color: #3f7722;
 }

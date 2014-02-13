@@ -130,6 +130,7 @@ mark {
 	background-color: #50972B;
 	color: #fff;
 	cursor: pointer;
+	outline: none;
 }
 
 .masthead button:hover,
@@ -137,6 +138,7 @@ mark {
 	background-color: #3f7722;
 	color: #000;
 	border: 2px solid #3f7722;
+	outline: none;
 }
 
 section {
@@ -171,9 +173,10 @@ section {
 }
 
 .testimonials {
-	padding: 1em;
-	background-color: rgba(153,51,0,1);
-	color: #FFF;
+	background-color: rgba(255,255,255,0.85);
+	padding: .5em;
+	text-align: center;
+	color: #000;
 }
 
 footer {
